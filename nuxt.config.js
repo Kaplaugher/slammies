@@ -34,6 +34,7 @@ export default {
       "fade-up",
       "fade-left",
       "fade-right",
+      "flip-left",
     ],
   },
   /*
