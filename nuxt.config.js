@@ -1,5 +1,5 @@
 export default {
-  mode: "spa",
+  mode: "universal",
   /*
    ** Headers of the page
    */
@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "@/plugins/aos", mode: "client" }],
+  plugins: [{ src: "@/plugins/aos", ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
