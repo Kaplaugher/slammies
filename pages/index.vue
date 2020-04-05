@@ -217,17 +217,20 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Emails from "~/components/Emails";
 import ProductCard from "~/components/ProductCard";
+import Footer from "~/components/Footer";
 
 export default {
   components: {
     Emails,
     ProductCard,
+    Footer,
   },
 };
 </script>
