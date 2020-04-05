@@ -14,20 +14,11 @@
         </p>
       </div>
       <div class="mt-8 lg:mt-0 lg:ml-8">
-        <form
-          class="sm:flex"
-          name="emailSub"
-          method="post"
-          v-on:submit.prevent="handleSubmit"
-          action="/success/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
+        <form class="sm:flex">
           <input
             aria-label="Email address"
             type="email"
             name="email"
-            v-model="formData.email"
             class="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs"
             placeholder="Enter your email"
           />
@@ -54,31 +45,9 @@
 export default {
   data() {
     return {
-      formData: {}
+      formData: {},
     };
   },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    },
-
-    handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
-      })
-        .then(() => this.$swal("Nice!", "Welcome to the club!", "success"))
-        .catch(error => alert(error));
-    }
-  }
 };
 </script>
 
