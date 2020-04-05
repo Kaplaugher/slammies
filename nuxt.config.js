@@ -24,10 +24,22 @@ export default {
    ** Global CSS
    */
   css: [],
+
+  purgeCSS: {
+    whitelist: [
+      "aos-init",
+      "aos-animate",
+      "data-aos-delay",
+      "data-aos-duration",
+      "fade-up",
+      "fade-left",
+      "fade-right",
+    ],
+  },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "@/plugins/aos", ssr: false }],
+  plugins: [{ src: "@/plugins/aos", mode: "client" }],
   /*
    ** Nuxt.js dev-modules
    */
