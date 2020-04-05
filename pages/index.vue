@@ -221,17 +221,10 @@
 </template>
 
 <script>
-let AOS;
-if (process.client) {
-  AOS = require("aos").default;
-}
 import Emails from "~/components/Emails";
 import ProductCard from "~/components/ProductCard";
 
 export default {
-  mounted() {
-    AOS.init();
-  },
   components: {
     Emails,
     ProductCard,
