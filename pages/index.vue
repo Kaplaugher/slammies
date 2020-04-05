@@ -37,15 +37,36 @@
 
     <Emails />
 
+    <h1 class="text-4xl text-themeblue font-semibold text-center mt-4">
+      Gear up for your next adventure
+    </h1>
+
     <div class="products grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12 px-6">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      <ProductCard
+        data-aos="flip-left"
+        data-aos-delay="500"
+        data-aos-once="true"
+      />
+      <ProductCard
+        data-aos="flip-left"
+        data-aos-delay="700"
+        data-aos-once="true"
+      />
+      <ProductCard
+        data-aos="flip-left"
+        data-aos-delay="900"
+        data-aos-once="true"
+      />
     </div>
 
     <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
       <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <div class="">
+        <div
+          class=""
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-once="true"
+        >
           <h2
             class="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 text-themegreen"
           >
@@ -59,6 +80,9 @@
 
         <div
           class="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-once="true"
         >
           <div class="">
             <h3
@@ -119,7 +143,12 @@
             </ul>
           </div>
 
-          <div class="h-full">
+          <div
+            class="h-full"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-once="true"
+          >
             <img
               class="object-cover h-full"
               src="../assets/snowboarding.jpg"
@@ -132,7 +161,7 @@
           <div
             class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center"
           >
-            <div>
+            <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
               <h3
                 class="text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9"
               >
@@ -176,7 +205,12 @@
               </ul>
             </div>
 
-            <div class="h-full">
+            <div
+              class="h-full"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
               <img class="object-cover" src="../assets/onmountain.jpg" alt="" />
             </div>
           </div>
