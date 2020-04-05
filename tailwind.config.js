@@ -13,6 +13,9 @@ module.exports = {
         themegreen: "#30e3ca",
         themewhite: "#f5f5f5",
       },
+      height: {
+        "600px": "600px",
+      },
     },
   },
   variants: {},

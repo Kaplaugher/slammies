@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div>
     <section id="banner">
       <div class="block md:flex">
-        <div class="xl:w-2/3 lg:w-1/2">
+        <div class="xl:w-2/3 lg:w-1/2 h-64 md:h-600px">
           <img
             src="../assets/surf.jpg"
             alt="surfer"
@@ -34,22 +34,31 @@
         </div>
       </div>
     </section>
+
+    <Emails />
+
+    <div class="products grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12 px-6">
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+    </div>
+
     <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
-      <div class=" max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+      <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
         <div class="">
           <h2
             class="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 text-themegreen"
           >
             Our Stuff is Cool
           </h2>
-          <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 ">
+          <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             magnam voluptatum cupiditate veritatis in, accusamus quisquam.
           </p>
         </div>
 
         <div
-          class=" mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+          class="mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
         >
           <div class="">
             <h3
@@ -57,7 +66,7 @@
             >
               Super comfy
             </h3>
-            <p class="mt-3 text-lg leading-7 ">
+            <p class="mt-3 text-lg leading-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               minima sequi recusandae, porro maiores officia assumenda aliquam
               laborum ab aliquid veritatis impedit odit adipisci optio iste
@@ -68,10 +77,10 @@
               <li>
                 <div class="flex">
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium ">
+                    <h5 class="text-lg leading-6 font-medium">
                       Sweet Designs
                     </h5>
-                    <p class="mt-2 text-base leading-6 ">
+                    <p class="mt-2 text-base leading-6">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Maiores impedit perferendis suscipit eaque, iste dolor
                       cupiditate blanditiis ratione.
@@ -82,10 +91,10 @@
               <li class="mt-10">
                 <div class="flex">
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium ">
+                    <h5 class="text-lg leading-6 font-medium">
                       Other Stuff
                     </h5>
-                    <p class="mt-2 text-base leading-6 ">
+                    <p class="mt-2 text-base leading-6">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Maiores impedit perferendis suscipit eaque, iste dolor
                       cupiditate blanditiis ratione.
@@ -96,10 +105,10 @@
               <li class="mt-10">
                 <div class="flex">
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium ">
+                    <h5 class="text-lg leading-6 font-medium">
                       Poppy Cock
                     </h5>
-                    <p class="mt-2 text-base leading-6 ">
+                    <p class="mt-2 text-base leading-6">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Maiores impedit perferendis suscipit eaque, iste dolor
                       cupiditate blanditiis ratione.
@@ -119,7 +128,7 @@
           </div>
         </div>
 
-        <div class=" mt-12 sm:mt-16 lg:mt-24">
+        <div class="mt-12 sm:mt-16 lg:mt-24">
           <div
             class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center"
           >
@@ -129,7 +138,7 @@
               >
                 Party On
               </h3>
-              <p class="mt-3 text-lg leading-7 ">
+              <p class="mt-3 text-lg leading-7">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                 ex obcaecati natus eligendi delectus, cum deleniti sunt in
                 labore nihil quod quibusdam expedita nemo.
@@ -139,10 +148,10 @@
                 <li>
                   <div class="flex">
                     <div class="ml-4">
-                      <h5 class="text-lg leading-6 font-medium ">
+                      <h5 class="text-lg leading-6 font-medium">
                         Stuff
                       </h5>
-                      <p class="mt-2 text-base leading-6 ">
+                      <p class="mt-2 text-base leading-6">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Maiores impedit perferendis suscipit eaque, iste
                         dolor cupiditate blanditiis ratione.
@@ -153,10 +162,10 @@
                 <li class="mt-10">
                   <div class="flex">
                     <div class="ml-4">
-                      <h5 class="text-lg leading-6 font-medium ">
+                      <h5 class="text-lg leading-6 font-medium">
                         Other Stuff
                       </h5>
-                      <p class="mt-2 text-base leading-6 ">
+                      <p class="mt-2 text-base leading-6">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Maiores impedit perferendis suscipit eaque, iste
                         dolor cupiditate blanditiis ratione.
@@ -179,15 +188,20 @@
 
 <script>
 import Emails from "~/components/Emails";
+import ProductCard from "~/components/ProductCard";
 
 export default {
   components: {
-    Emails
-  }
+    Emails,
+    ProductCard,
+  },
 };
 </script>
 
 <style>
+.products {
+  justify-items: center;
+}
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
