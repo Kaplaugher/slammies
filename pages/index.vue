@@ -2,7 +2,7 @@
   <div>
     <section id="banner">
       <div class="block md:flex">
-        <div class="xl:w-2/3 lg:w-1/2 h-64 md:h-600px">
+        <div class="lg:w-1/2 xl:w-2/3 h-64 md:h-600px">
           <img
             src="../assets/surf.jpg"
             alt="surfer"
@@ -217,20 +217,17 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
 import Emails from "~/components/Emails";
 import ProductCard from "~/components/ProductCard";
-import Footer from "~/components/Footer";
 
 export default {
   components: {
     Emails,
     ProductCard,
-    Footer,
   },
 };
 </script>
