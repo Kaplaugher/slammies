@@ -19,6 +19,15 @@
           About
         </nuxt-link>
       </div>
+      <div class="text-lg font-semibold ">
+        <nuxt-link
+          exact
+          to="/contact"
+          class=" mt-4 lg:inline-block lg:mt-0 text-themewhite hover:text-themegreen mr-4"
+        >
+          Contact
+        </nuxt-link>
+      </div>
     </div>
 
     <div class="flex">
