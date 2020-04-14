@@ -52,7 +52,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "@/plugins/aos", mode: "client" }, "~/plugins/vue-select"],
+  plugins: [
+    { src: "@/plugins/aos", mode: "client" },
+    { src: "~/plugins/vue-select", mode: "client" }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
