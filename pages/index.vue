@@ -42,21 +42,27 @@
     </h1>
 
     <div class="products grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-12 px-6">
-      <ProductCard
-        data-aos="flip-left"
-        data-aos-delay="500"
-        data-aos-once="true"
-      />
-      <ProductCard
-        data-aos="flip-left"
-        data-aos-delay="700"
-        data-aos-once="true"
-      />
-      <ProductCard
-        data-aos="flip-left"
-        data-aos-delay="900"
-        data-aos-once="true"
-      />
+      <nuxt-link to="/products/thingy" class=".cursor-pointer">
+        <ProductCard
+          data-aos="flip-left"
+          data-aos-delay="500"
+          data-aos-once="true"
+        />
+      </nuxt-link>
+      <nuxt-link to="/products/thingy" class=".cursor-pointer">
+        <ProductCard
+          data-aos="flip-left"
+          data-aos-delay="700"
+          data-aos-once="true"
+        />
+      </nuxt-link>
+      <nuxt-link to="/products/thingy" class=".cursor-pointer">
+        <ProductCard
+          data-aos="flip-left"
+          data-aos-delay="900"
+          data-aos-once="true"
+        />
+      </nuxt-link>
     </div>
 
     <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
@@ -227,8 +233,8 @@ import ProductCard from "~/components/ProductCard";
 export default {
   components: {
     Emails,
-    ProductCard,
-  },
+    ProductCard
+  }
 };
 </script>
 
@@ -236,6 +242,7 @@ export default {
 .products {
   justify-items: center;
 }
+
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;

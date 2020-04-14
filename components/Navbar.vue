@@ -31,7 +31,7 @@
     </div>
 
     <div class="flex">
-      <nuxt-link to="/" class="z-10">
+      <nuxt-link to="/" class="z-1">
         <img
           src="../assets/slammiesboard.png"
           alt="logo"
