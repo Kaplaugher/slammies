@@ -32,11 +32,7 @@
 
     <div class="flex">
       <nuxt-link to="/" class="z-1">
-        <img
-          src="../assets/slammiesboard.png"
-          alt="logo"
-          class=" h-12 md:h-16"
-        />
+        <img src="../assets/slamlight.png" alt="logo" class=" h-12 md:h-16" />
       </nuxt-link>
     </div>
 
