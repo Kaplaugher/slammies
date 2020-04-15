@@ -46,7 +46,11 @@ export default {
       "fade-up",
       "fade-left",
       "fade-right",
-      "flip-left"
+      "flip-left",
+      "page-enter-active",
+      "page-leave-active",
+      "page-enter",
+      "page-leave-to"
     ]
   },
   /*
