@@ -60,7 +60,7 @@ export default {
       "layouts/**/*.vue",
       "pages/**/*.vue",
       "plugins/**/*.js",
-      "node_modules/vue-select/src/*.vue"
+      "node_modules/vue-select/src/components/*.vue"
     ]
   },
   /*
