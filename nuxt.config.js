@@ -50,7 +50,17 @@ export default {
       "page-enter-active",
       "page-leave-active",
       "page-enter",
-      "page-leave-to"
+      "page-leave-to",
+      "body",
+      "html",
+      "nuxt-progress"
+    ],
+    paths: [
+      "components/**/*.vue",
+      "layouts/**/*.vue",
+      "pages/**/*.vue",
+      "plugins/**/*.js",
+      "node_modules/vue-select/src/*.vue"
     ]
   },
   /*
