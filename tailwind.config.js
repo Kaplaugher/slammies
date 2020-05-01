@@ -11,13 +11,17 @@ module.exports = {
         dark: "#40514e",
         themeblue: "#2f89fc",
         themegreen: "#30e3ca",
-        themewhite: "#f5f5f5",
+        themewhite: "#f5f5f5"
       },
       height: {
-        "600px": "600px",
+        "600px": "600px"
       },
-    },
+      fontFamily: {
+        title: "Montserrat",
+        body: "Roboto"
+      }
+    }
   },
   variants: {},
-  plugins: [require("@tailwindcss/ui")],
+  plugins: [require("@tailwindcss/ui")]
 };

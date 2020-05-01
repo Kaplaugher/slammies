@@ -20,6 +20,11 @@ export default {
         href: "https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css",
         type: "text/css",
         rel: "stylesheet"
+      },
+      {
+        href:
+          "https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto&display=swap",
+        rel: "stylesheet"
       }
     ],
     script: [

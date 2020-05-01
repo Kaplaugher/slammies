@@ -12,12 +12,10 @@
         <div
           class="description xl:w-1/3 lg:w-1/2 xl:max-w-xl flex flex-col justify-around p-8"
         >
-          <h1
-            class="my-2 text-3xl lg:text-4xl xl:text-6xl font-bold text-themegreen"
-          >
+          <h1 class="my-2  text-themegreen text-5xl font-black ">
             Slammiebrands
           </h1>
-          <p class="my-2 lg:text-xl font-semibold">
+          <p class="my-2 lg:text-xl font-body">
             With the launch of our website we have designed 3 inaugural
             products. With one of our passions being snowboarding the team has
             created a “Life’s short, Shred it” line of items. These include a
@@ -25,12 +23,12 @@
             please be patient with us! In the meantime let us leave you with a
             quote to inspire you.
           </p>
-          <h1 class="italic text-base text-lg font-semibold">
+          <p class="italic text-base font-body text-lg">
             “So we shall let the reader answer this question for himself: who is
             the happier man, he who has braved the storm of life and lived or he
             who has stayed securely on shore and merely existed?” — Hunter S.
             Thompson
-          </h1>
+          </p>
         </div>
       </div>
     </section>
